@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات التواصل</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
+        
+        body {
+            margin: 0;
+            font-family: 'Tajawal', Arial, sans-serif;
+            background: linear-gradient(135deg, #6A1B9A, #9C27B0);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            direction: rtl;
+            line-height: 1.6;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: #FFEB3B;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #E0E0E0;
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .contact-item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .contact-link {
+            color: #FFEB3B;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .contact-link i {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .contact-link:hover {
+            color: #FFC107;
+        }
+        /* WhatsApp specific color */
+        .whatsapp-icon {
+            color: #25D366 !important;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبًا بك! 👋</h1>
+        <p>للتواصل معنا، يمكنك استخدام الروابط أدناه:</p>
+        <ul class="contact-list">
+            <li class="contact-item">
+                <a href="tel:+212709054931" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    <span>اتصل بنا: +212709054931</span>
+                </a>
+            </li>
+            <li class="contact-item">
+                <a href="https://wa.me/212709054931" target="_blank" class="contact-link">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i>
+                    <span>تواصل عبر واتساب: +212709054931</span>
+                </a>
+            </li>
+            <li class="contact-item">
+                <a href="https://www.facebook.com/profile.php?id=100092691441858&mibextid=ZbWKwL" target="_blank" class="contact-link">
+                    <i class="fab fa-facebook"></i>
+                    <span>صفحتنا على فيسبوك</span>
+                </a>
+            </li>
+            <li class="contact-item">
+                <a href="https://hossm96.github.io/AYADICYBER/" target="_blank" class="contact-link">
+                    <i class="fas fa-globe"></i>
+                    <span>موقعنا الإلكتروني</span>
+                </a>
+            </li>
+            <li class="contact-item">
+                <a href="https://maps.app.goo.gl/fJxUKM2jMne8YXu5A" target="_blank" class="contact-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>موقعنا على الخريطة</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
